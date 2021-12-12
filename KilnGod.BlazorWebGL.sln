@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KilnGod.BlazorWebGL", "KilnGod.BlazorWebGL\KilnGod.BlazorWebGL.csproj", "{3C13A5BA-8425-4EB5-BE1C-76EA0D3A6074}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KilnGod.BlazorWebGL.ServerApp", "KilnGod.BlazorWebGL.ServerApp\KilnGod.BlazorWebGL.ServerApp.csproj", "{C3859C1F-59D5-41DA-9EFA-6ECDB5339869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KilnGod.BlazorWebGL.TestSample", "KilnGod.BlazorWebGL.TestSample\KilnGod.BlazorWebGL.TestSample.csproj", "{AD931802-8429-4C8C-B681-FFEF384C5058}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KilnGod.BlazorWebGL.ClientApp", "KilnGod.BlazorWebGL.ClientApp\KilnGod.BlazorWebGL.ClientApp.csproj", "{03E2C1CA-90C9-43B5-AAD7-43D505638652}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C13A5BA-8425-4EB5-BE1C-76EA0D3A6074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C13A5BA-8425-4EB5-BE1C-76EA0D3A6074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C13A5BA-8425-4EB5-BE1C-76EA0D3A6074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C13A5BA-8425-4EB5-BE1C-76EA0D3A6074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3859C1F-59D5-41DA-9EFA-6ECDB5339869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3859C1F-59D5-41DA-9EFA-6ECDB5339869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3859C1F-59D5-41DA-9EFA-6ECDB5339869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3859C1F-59D5-41DA-9EFA-6ECDB5339869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD931802-8429-4C8C-B681-FFEF384C5058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD931802-8429-4C8C-B681-FFEF384C5058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD931802-8429-4C8C-B681-FFEF384C5058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD931802-8429-4C8C-B681-FFEF384C5058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03E2C1CA-90C9-43B5-AAD7-43D505638652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03E2C1CA-90C9-43B5-AAD7-43D505638652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03E2C1CA-90C9-43B5-AAD7-43D505638652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03E2C1CA-90C9-43B5-AAD7-43D505638652}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {799A9ED1-E029-48F0-A6E3-1895182D7CD8}
+	EndGlobalSection
+EndGlobal
