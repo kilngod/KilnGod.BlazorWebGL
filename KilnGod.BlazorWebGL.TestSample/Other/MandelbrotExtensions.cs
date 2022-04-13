@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using KilnGod.BlazorWebGL.Basic2DWebGL;
 
 
 namespace KilnGod.BlazorWebGL.TestSample.Other;

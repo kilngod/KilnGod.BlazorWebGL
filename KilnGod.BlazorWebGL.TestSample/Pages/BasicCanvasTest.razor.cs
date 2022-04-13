@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
-using KilnGod.BlazorWebGL;
+using KilnGod.BlazorWebGL.Basic2DWebGL;
 using System.Drawing;
 using KilnGod.BlazorWebGL.TestSample.Other;
 using System.Text.Json.Nodes;

@@ -1,12 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+// ---------------------------------------------------------------------------------------
+//                                        KilnGod.BlazorWebGL
+//                        Copyright (c) 2021 KilnGod.BlazorWebGL Project
+//                                   
+//
+// File: BasicCanvas.razor.cs
+//
+// This file is part of KilnGod.BlazorWebGL and is distributed under the University of Illinois Open
+// Source License. See LICENSE.txt for details.
+// ---------------------------------------------------------------------------------------
+
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
-namespace KilnGod.BlazorWebGL
+namespace KilnGod.BlazorWebGL.Basic2DWebGL
 {
     public partial class BasicCanvas : ComponentBase, IAsyncDisposable
     {
@@ -130,43 +137,7 @@ namespace KilnGod.BlazorWebGL
             }
         }
 
-        public async ValueTask SetFunction(string functionName, string functionText)
-        {
-            if (module != null)
-            {
-                module.InvokeVoid("InjectFunction", CanvasReference, functionName, functionText);
-            }
-            else
-            {
-                await asyncModule.InvokeVoidAsync("InjectFunction", CanvasReference, functionName, functionText);
-            }
-        }
-
-        public async ValueTask SetGlobalFunction(string globalFunctionName, params object?[]? args)
-        {
-            if (module != null)
-            {
-                module.InvokeVoid(globalFunctionName, CanvasReference, args);
-            }
-            else
-            {
-                await asyncModule.InvokeVoidAsync(globalFunctionName, CanvasReference, args);
-            }
-        }
-
-        public async ValueTask<T> GetGlobalFunction<T>(string globalFunctionName, params object?[]? args)
-        {
-            if (module != null)
-            {
-                return module.Invoke<T>(globalFunctionName, CanvasReference, args);
-            }
-            else
-            {
-                return await asyncModule.InvokeAsync<T>(globalFunctionName, CanvasReference, args);
-            }
-        }
-
-
+       
         public async ValueTask SetValueBasicContext(string ValueName, params object?[]? args)
         {
             if (module != null)

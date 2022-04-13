@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Nodes;
 
-namespace KilnGod.BlazorWebGL;
+namespace KilnGod.BlazorWebGL.Basic2DWebGL;
 
 /// <summary>
 /// All webgl context methods are setup as extension methods to the BasicCanvas
@@ -17,11 +17,8 @@ namespace KilnGod.BlazorWebGL;
 public static class BasicCanvasExtensions
 {
 
-    public async static ValueTask<JsonObject> GetContextAttributes(this BasicCanvas basicCanvas)
-    {
-        return await basicCanvas.GetFunctionBasicContext<JsonObject>("getContextAttributes");
-    }
-
+    public async static ValueTask<JsonObject> GetContextAttributes(this BasicCanvas basicCanvas) => await basicCanvas.GetFunctionBasicContext<JsonObject>("getContextAttributes");
+    
 
     // basic values
     public async static ValueTask GlobalAlpha(this BasicCanvas basicCanvas, float alpha) => await basicCanvas.SetValueBasicContext("globalAlpha", alpha);
@@ -77,12 +74,12 @@ public static class BasicCanvasExtensions
 
     public async static ValueTask<float> MiterLimit(this BasicCanvas basicCanvas) => await basicCanvas.GetValueBasicContext<float>("miterLimit");
 
-    public async static ValueTask LineCap(this BasicCanvas basicCanvas, int value) => await basicCanvas.SetValueBasicContext("lineCap", value.ToString());
+    public async static ValueTask LineCap(this BasicCanvas basicCanvas, CanvasLineCap value) => await basicCanvas.SetValueBasicContext("lineCap", value.ToString());
 
     public async static ValueTask<string> LineCap(this BasicCanvas basicCanvas) => await basicCanvas.GetValueBasicContext<string>("lineCap");
 
 
-    public async static ValueTask LineJoin(this BasicCanvas basicCanvas, int joinType) => await basicCanvas.SetValueBasicContext("lineJoin", joinType.ToString());
+    public async static ValueTask LineJoin(this BasicCanvas basicCanvas, CanvasLineJoin joinType) => await basicCanvas.SetValueBasicContext("lineJoin", joinType.ToString());
 
     public async static ValueTask LineDashOffset(this BasicCanvas basicCanvas, int lineDashOffset) => await basicCanvas.SetValueBasicContext("lineDashOffset", lineDashOffset);
 
@@ -129,11 +126,11 @@ public static class BasicCanvasExtensions
     // text methods
     public async static ValueTask Font(this BasicCanvas basicCanvas, string fontName) => await basicCanvas.SetValueBasicContext("font", fontName);
     public async static ValueTask<string> Font(this BasicCanvas basicCanvas) => await basicCanvas.GetValueBasicContext<string>("font");
-    public async static ValueTask TextAlign(this BasicCanvas basicCanvas, int align) => await basicCanvas.SetValueBasicContext("textAlign", align.ToString());
+    public async static ValueTask TextAlign(this BasicCanvas basicCanvas, CanvasTextAlign align) => await basicCanvas.SetValueBasicContext("textAlign", align.ToString());
     public async static ValueTask<string> TextAlign(this BasicCanvas basicCanvas) => await basicCanvas.GetValueBasicContext<string>("textAlign");
-    public async static ValueTask TextBaseline(this BasicCanvas basicCanvas, int baseline) => await basicCanvas.SetValueBasicContext("textBaseline", baseline.ToString());
+    public async static ValueTask TextBaseline(this BasicCanvas basicCanvas, CanvasTextBaseline baseline) => await basicCanvas.SetValueBasicContext("textBaseline", baseline.ToString());
     public async static ValueTask<string> TextBaseline(this BasicCanvas basicCanvas) => await basicCanvas.GetValueBasicContext<string>("textBaseline");
-    public async static ValueTask Direction(this BasicCanvas basicCanvas, int direction) => await basicCanvas.SetValueBasicContext("direction", direction.ToString()); 
+    public async static ValueTask Direction(this BasicCanvas basicCanvas, CanvasDirection direction) => await basicCanvas.SetValueBasicContext("direction", direction.ToString()); 
     public async static ValueTask<string> Direction(this BasicCanvas basicCanvas) => await basicCanvas.GetValueBasicContext<string>("direction");
 
 

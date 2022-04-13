@@ -1,0 +1,43 @@
+﻿@page "/WebGLCanvasTest1"
+
+<h3>WebGLTest2</h3>
+
+<p>This blazor WebGL is a simple WEBGL viewer of STL files.</p>
+<p>
+    <WebGLCanvas @ref="Canvas3D"></WebGLCanvas>
+</p>
+<p>
+
+    <Tooltip Text="Select Item to Render">
+    <select id="ItemToRender" @onchange="@UpdateSelected" disabled="@disabledButtons">
+        <option value="none">Select Item Render</option>
+        <option value="stlfile">STL File</option>
+        <option value="sphere">Sphere</option>
+        <option value="box">Box</option>
+        <option value="cylinder">Cylinder</option>
+        <option value="cone">Cone</option>
+    </select>
+    </Tooltip>
+   
+     <Tooltip Text="Javascript accessible from C# WebGL">
+        <button class="btn btn-primary m-1" @onclick="ConfigureSceneScript" disabled="@disabledButtons">Configure Scene Script</button>
+    </Tooltip>
+
+     <Tooltip Text="Javascript accessible from C# WebGL">
+        <button class="btn btn-primary m-1" @onclick="ConfigureSceneCSharp" disabled="@disabledButtons">Configure Scene CSharp</button>
+    </Tooltip>
+
+      <!--
+   
+    <Tooltip Text="Javascript accessible from C# WebGL">
+        <button class="btn btn-primary m-1" @onclick="Render1" disabled="@disabledButtons">Render 1</button>
+    </Tooltip>
+    <Tooltip Text="C# driven accessible WebGL, using requestAnimationFrame">
+        <button class="btn btn-primary m-1" @onclick="Render3" disabled="@disabledButtons">Render 3</button>
+    </Tooltip>
+
+    <Tooltip Text="C# driven accessible WebGL not using requestAnimationFrame">
+        <button class="btn btn-primary m-1" @onclick="Render4" disabled="@disabledButtons">Render 4</button>
+    </Tooltip>
+        -->
+</p>

@@ -1,7 +1,7 @@
 ﻿
 
 export function initializeBasicCanvas(canvasid, isWebassemblyClient, isTransparent, isDesynchronized) {
-    "use strict";
+     // strict mode on by default in modules
 
 
     const canvas = window.document.getElementById(canvasid); //'webgl-canvas'
@@ -20,14 +20,14 @@ export function initializeBasicCanvas(canvasid, isWebassemblyClient, isTranspare
 
 
 export function InjectScript(scriptText) {
-
+ // strict mode on by default in modules
     eval(scriptText);
 
 }
 
 
 export function setValueBasicContext(drawcanvas, valueName, values) {
-    "use strict";
+    // strict mode on by default in modules
     if (drawcanvas && drawcanvas.drawingBasis) {
 
         const context = drawcanvas.drawingBasis.context;
@@ -47,7 +47,7 @@ export function setValueBasicContext(drawcanvas, valueName, values) {
 
 
 export function setFunctionBasicContext(drawcanvas, functionName, values) {
-    "use strict";
+     // strict mode on by default in modules
     if (drawcanvas && drawcanvas.drawingBasis) {
 
         const context = drawcanvas.drawingBasis.context;
@@ -101,7 +101,7 @@ export function setFunctionBasicContext(drawcanvas, functionName, values) {
 
 
 export function setFunctionDrawingBasis(drawcanvas, functionName, values) {
-    "use strict";
+     // strict mode on by default in modules
     if (drawcanvas && drawcanvas.drawingBasis) {
 
         const drawingBasis = drawcanvas.drawingBasis;
@@ -152,7 +152,7 @@ export function setFunctionDrawingBasis(drawcanvas, functionName, values) {
 
 
 export function getValueBasicContext(drawcanvas, valueName) {
-    "use strict";
+     // strict mode on by default in modules
     // Blazor "params object?[]? args" as values can be passed as an array of arrays. 
     // When the first element is an array substitute the first element as the array.
     if (Array.isArray(valueName)) {
@@ -170,7 +170,7 @@ export function getValueBasicContext(drawcanvas, valueName) {
 
 
 export function getFunctionBasicContext(drawcanvas, functionName, values) {
-    "use strict";
+     // strict mode on by default in modules
     if (drawcanvas && drawcanvas.drawingBasis) {
 
         const context = drawcanvas.drawingBasis.context;
@@ -213,7 +213,7 @@ export function getFunctionBasicContext(drawcanvas, functionName, values) {
 
 
 export function getFunctionDrawingBasis(drawcanvas, functionName, values) {
-    "use strict";
+     // strict mode on by default in modules
     if (drawcanvas && drawcanvas.drawingBasis) {
 
         const drawingBasis = drawcanvas.drawingBasis;
@@ -266,7 +266,7 @@ export function getFunctionDrawingBasis(drawcanvas, functionName, values) {
 
 
 export class DrawingBasis {
-    "use strict";
+     // strict mode on by default in modules
     constructor(canvasContext, isWebAssemblyClient, canvas) {
         // reference for GLContext
         this.context = canvasContext;
