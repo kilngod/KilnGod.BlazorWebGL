@@ -40,13 +40,14 @@ Cromium based browsers Chrome and Edge support both WebAssemble and WebGl2 (Open
 and Safari do not support WebAssembly and have no plans to support WebAssembly as this would defeat Apple's 30% app store 
 commission for games and applications. Note games are a principle revenue driver for Apple. Safari was last to the party 
 with WebGL2 support only starting Feburary 23, 2022, it was lauadable that Apple's website had WebGL2 features not visible
-in Safari browsers for many years. I feel distinctly sorry for anyone who bought an Intel based Mac in recent years. In 
-my opinion Apple clearly diverted the majority of their developer resources to their M1 processor since 2018. It appears 
-this delayed Safari WebGL2 support for approximately 5 years. I wonder if Intel based Macs version of Safari 
-support WebGL2? My guess is Intel Mac do not as I can't see Apple updating Metal on Intel Macs, but who knows? I experienced 
-Apples "unplanned" product obselence with an iPhone 3 and an Intel based Mac Mini that was obselete on arrival. It's clear 
-to me all Intel based Macs are effectively end of life products with minimal future support. Likely wise to install Linux 
-and call it a day with Intel based Macs.
+in Safari browsers for many years. I wonder if Intel based Macs version of Safari support WebGL2? I feel distinctly sorry 
+for anyone who bought an Intel based Mac in recent years. In my opinion Apple clearly diverted the majority of their developer 
+resources to their M1 processor since 2018, WebGl2 specification was finalized in Janurary of 2017. It appears M1 support 
+delayed Safari's WebGL2 support by 3 to 5 years. My guess is Intel Mac do not support WebGL2 as I can't see Apple updating 
+Metal on Intel Macs, but who knows? I experienced Apple's "unplanned" product obselence with an iPhone 3 and an Intel based 
+Mac Mini that was obselete on arrival due to last generation hardware under the hood. It's clear to me all Intel based Macs 
+are effectively end of life products with minimal future support. Likely wise to install Linux and call it a day with Intel 
+based Macs.
 
 
 
