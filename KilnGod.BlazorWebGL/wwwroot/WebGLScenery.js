@@ -1,4 +1,6 @@
-﻿
+﻿import * as vec3 from "./vec3.js";
+
+
 export class WebGLScenery {
    // strict mode on by default in modules
 
