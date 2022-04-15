@@ -49,6 +49,10 @@ and an Intel based Mac Mini which was obsolete on arrival due to last generation
 all Intel based Macs are effectively end of life products with minimal future support. Likely best to install Linux on an Intel 
 Mac and call it a day.
 
+## Future Innovations
+1) 2D data visualization from C#
+2) 3D complete object viewing
+3) 3D data visualization from c#
 
 
 
