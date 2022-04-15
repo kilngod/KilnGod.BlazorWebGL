@@ -296,7 +296,7 @@ export class WebGLScenery {
             scene.enableVertexAttribArray(scene.aVertexPosition);
         }
 
-        // verticies
+        // vertices
     
 
 
