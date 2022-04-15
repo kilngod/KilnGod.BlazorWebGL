@@ -29,8 +29,11 @@ rendering.
 ## Performance
 Its useful to understand WebGL in the browser is implemented natively on Windows in DirectX 12 or Vulkan, Android/Linux 
 in Vulkan or OpenGL, Mac/iOS in Metal perhaps wrapped as Vulkan or OpenGL. There is a minium of one wrapper call inside 
-the browser to a native API, likely two on Apple devices. This adds a small amount of overhead to each call but given the 
-nature of 3D rendering it should not impact performance significantly.
+the browser to the native API, likely two on Apple devices. This adds a small amount of overhead to each call. However, 
+given the nature of 3D rendering this is not a significant impact on performance. The biggest drag on WebGL performance 
+in a server hosted environment are the client/server calls over the "SignalR" wire blazor uses. This overhead can be 
+avoided with WebAssembly deployment or highly mindful use of client side JavaScript in server hosted application. Also 
+hybrid Blazor applications (Server + WebAssembly) will become routine in the next release of Blazor.    
 
 ## Browser Support
 Cromium based browsers Chrome and Edge support both WebAssemble and WebGl2 (OpenGL 3.0) specification. Currently Mozilla 
@@ -38,10 +41,14 @@ and Safari do not support WebAssembly and have no plans to support WebAssembly a
 commission for games and applications. Note games are a principle revenue driver for Apple. Safari was last to the party 
 with WebGL2 support only starting Feburary 23, 2022, it was lauadable that Apple's website had WebGL2 features not visible
 in Safari browsers for many years. I feel distinctly sorry for anyone who bought an Intel based Mac in recent years. In 
-my opinion Apple clearly diverted the majority of their developer resources to their M1 processor since 2018. This delayed
-Safari WebGL2 support for years. I wonder if Intel based Macs version of Safari support WebGL2? My guess is they do not as 
-I can't see Apple updating Metal on Intel Macs, but who knows? It's clear to me all Intel Macs are effectively end of life 
-products with minimal future support.
+my opinion Apple clearly diverted the majority of their developer resources to their M1 processor since 2018. It appears 
+this delayed Safari WebGL2 support for approximately 5 years. I wonder if Intel based Macs version of Safari 
+support WebGL2? My guess is Intel Mac do not as I can't see Apple updating Metal on Intel Macs, but who knows? I experienced 
+Apples "unplanned" product obselence with an iPhone 3 and an Intel based Mac Mini that was obselete on arrival. It's clear 
+to me all Intel based Macs are effectively end of life products with minimal future support. Likely wise to install Linux 
+and call it a day with Intel based Macs.
+
+
 
 
 
