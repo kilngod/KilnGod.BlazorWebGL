@@ -17,6 +17,7 @@ be great to load game landscapes as this falls under simulation however full gam
 The "BasicCanvas" component is a modularized wrapper around the 2D WebGl Context, all 2D WebGl Context methods are 
 implemented as C# extension methods of the BasicCanvas component. For performance reasons, one can inject JavaScript
 methods to speed rendering on the canvas by reducing the number of calls over the wire when rendering from webserver.
+For 2D "Visualization" I am wrapping "plotly.js" in a Blazor component, no need to reinvent the wheel. 
 
 ## 3D Visualization and Simulation
 
@@ -50,9 +51,8 @@ all Intel based Macs are effectively end of life products with minimal future su
 Mac and call it a day.
 
 ## Future Innovations
-1) 2D data visualization from C#
-2) 3D complete object viewing
-3) 3D data visualization from c#
+1) 3D complete object viewing
+2) 3D data visualization from c#
 
 
 
